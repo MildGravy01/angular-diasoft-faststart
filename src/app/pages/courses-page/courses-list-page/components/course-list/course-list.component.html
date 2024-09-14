@@ -1,5 +1,5 @@
 <div class="list">
     <app-course-item *ngFor="let item of items" [courseModel]="item" (onEditCourse)="editCourse($event)" (onDeleteCourse)="deleteCourse($event)"/>
-    <p-button styleClass="p-button-outlined p-button-secondary" style="align-self: center;" label="Загрузить еще" *ngIf="items.length > 0"/>
+    <p-button styleClass="p-button-outlined p-button-secondary" style="align-self: center;" label="Загрузить еще" *ngIf="items.length > 0" (onClick)="onLoadMore()"/>
     <h4 *ngIf="items.length == 0">Нет доступных курсов</h4>
 </div>

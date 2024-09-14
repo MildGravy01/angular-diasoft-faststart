@@ -19,6 +19,11 @@ export class CourseListComponent {
     console.log('Course', courseItem);
    }
 
+
+   onLoadMore(){
+    console.log("Loading more...");
+   }
+
    deleteCourse(id:string){
     console.log('Delete', id);
    }
