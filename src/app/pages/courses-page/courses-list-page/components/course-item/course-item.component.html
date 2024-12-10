@@ -1,0 +1,19 @@
+<div class="container" style="background-color: #FFFFFF;">
+    <div class="header row space-between margin">
+        <h3 class="title">{{courseModel.Title}}</h3>
+        <div class="gray">
+            <p><i class="pi pi-clock"></i>{{courseModel.Duration}}</p>
+            <p><i class="pi pi-calendar"></i>{{courseModel.CreationDate}}</p>
+        </div>
+    </div>
+    <div class="row space-between margin">
+        <div class="description">
+            {{courseModel.Description}}
+        </div>
+        <div class="row"> 
+            <p-button icon="pi pi-pencil" styleClass="p-button-rounded p-button-text" (onClick)="onEdit()"/>
+            <p-button icon="pi pi-trash" styleClass="p-button-rounded p-button-text p-button-danger" (onClick)="onDelete()"/>
+        </div>
+    </div>
+
+</div>

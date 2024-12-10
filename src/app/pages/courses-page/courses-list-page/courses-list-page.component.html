@@ -1,0 +1,19 @@
+<div class="page-content">
+  <p-breadcrumb class="max-w-full" [home]="home"></p-breadcrumb>
+
+  <div class="courses-list-wrapper">
+    <div class="courses-list-header">
+      <div class="searchbox-area">
+        <span class="p-input-icon-left">
+          <i class="pi pi-search"></i>
+          <input type="text" pInputText placeholder="Поиск" [(ngModel)]="searchValue"/>
+          <p-button label="Поиск" styleClass="p-button-help" (onClick)="onSearch()"></p-button>
+        </span>
+      </div>
+      <p-button label="Добавить курс" icon="pi pi-plus"></p-button>
+    </div>
+    <div class="list-holder">
+       <app-course-list/>
+    </div>
+  </div>
+</div>
